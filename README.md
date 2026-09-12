@@ -79,35 +79,6 @@ Learning curves for both accuracy and loss (train vs. validation) are plotted in
 └── README.md
 ```
 
-## Getting started
-
-### Requirements
-
-- Python 3.12 or lower
-- TensorFlow 2.18.1
-- numpy
-- pandas
-- matplotlib
-
-```bash
-pip install tensorflow==2.18.1 numpy pandas matplotlib
-```
-
-> On Apple Silicon, GPU acceleration is available via the `tensorflow-metal` plug-in:
-> ```bash
-> pip install tensorflow-metal
-> ```
-
-### Running the notebook
-
-1. Clone this repository.
-2. Install the requirements above.
-3. Launch Jupyter and open `Fashion_NN.ipynb`:
-   ```bash
-   jupyter notebook Fashion_NN.ipynb
-   ```
-4. Run all cells top to bottom. The Fashion-MNIST dataset downloads automatically on first run.
-
 ## What's next
 
 This project intentionally uses a dense (fully-connected) network rather than a CNN, to focus on the fundamentals. A natural next step would be introducing convolutional layers to see how much accuracy improves on the same task.
