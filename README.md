@@ -41,7 +41,7 @@ The dataset is loaded directly via `tf.keras.datasets.fashion_mnist`, so no manu
 
 ### Model architecture
 
-A sequential fully-connected network — no convolutional layers, by design, to keep the focus on core neural network mechanics (dense layers, batch normalization, dropout):
+A sequential fully-connected network with no convolutional layers, by design, to keep the focus on core neural network mechanics (dense layers, batch normalization, dropout):
 
 ```
 Input (28, 28, 1)
@@ -56,8 +56,8 @@ Dense(10, activation='softmax')  → 10 class probabilities
 - **Loss:** sparse categorical cross-entropy
 - **Batch size:** 64
 - **Callbacks:**
-  - `EarlyStopping` — monitors `val_accuracy`, stops after 5 epochs without improvement, restores best weights
-  - `ModelCheckpoint` — saves the best-performing model to `best_fashion_mnist_model.keras`
+  - `EarlyStopping` - monitors `val_accuracy`, stops after 5 epochs without improvement, restores best weights
+  - `ModelCheckpoint` - saves the best-performing model to `best_fashion_mnist_model.keras`
 
 ## Results
 
@@ -66,7 +66,7 @@ Training ran for up to 50 epochs but stopped early at epoch 27 once validation a
 - **~90% validation accuracy**
 - **~0.30 validation loss**
 
-Beyond the headline accuracy, this project also inspects the model's full softmax output — the probability it assigns to *every* class, not just the winning one. On one test image, the model correctly identified a bag with **99.99% confidence**, correctly assigning almost zero probability to all 9 other classes — a nice illustration of how a network can be highly and appropriately confident even from a low-resolution 28×28 image.
+Beyond the headline accuracy, this project also inspects the model's full softmax output, the probability it assigns to *every* class, not just the winning one. On one test image, the model correctly identified a bag with **99.99% confidence**, correctly assigning almost zero probability to all 9 other classes, a nice illustration of how a network can be highly and appropriately confident even from a low-resolution 28×28 image.
 
 Learning curves for both accuracy and loss (train vs. validation) are plotted in the notebook to check for overfitting and confirm the model converged smoothly.
 
