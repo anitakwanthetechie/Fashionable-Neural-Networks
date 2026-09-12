@@ -82,8 +82,3 @@ Learning curves for both accuracy and loss (train vs. validation) are plotted in
 ## What's next
 
 This project intentionally uses a dense (fully-connected) network rather than a CNN, to focus on the fundamentals. A natural next step would be introducing convolutional layers to see how much accuracy improves on the same task.
-
-## Acknowledgments
-
-- [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset by Zalando Research
-- Built with [TensorFlow](https://www.tensorflow.org/) / [Keras](https://keras.io/)
