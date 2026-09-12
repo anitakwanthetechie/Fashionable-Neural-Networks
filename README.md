@@ -61,7 +61,7 @@ Dense(10, activation='softmax')  → 10 class probabilities
 
 ## Results
 
-Training ran for up to 50 epochs but stopped early at epoch 31 once validation accuracy plateaued. The best epoch reached:
+Training ran for up to 50 epochs but stopped early at epoch 27 once validation accuracy plateaued. The best epoch reached:
 
 - **~90% validation accuracy**
 - **~0.30 validation loss**
